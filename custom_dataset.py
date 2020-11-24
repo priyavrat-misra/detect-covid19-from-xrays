@@ -22,12 +22,19 @@ class ChestXRayDataset(torch.utils.data.Dataset):
         self.transform = transform
 
     def __len__(self):
+        '''
+        returns the length of the dataset
+        '''
         return sum(
             [len(self.images[class_name]) for class_name in self.classes]
         )
 
     def __getitem__(self, index):
+        '''
+        deals with class imbalance problem by returning same images randomly
+        '''
         class_name = random.choice(self.classes)
+        # to deal with index out of bounds
         index = index % len(self.images[class_name])
         image_name = self.images[class_name][index]
         image_path = os.path.join(self.image_dirs[class_name], image_name)
