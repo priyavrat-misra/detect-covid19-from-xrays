@@ -1,4 +1,5 @@
-# Diagnosing COVID-19 and Viral Pneumonia from Chest X-Rays
+# (deprecated) Diagnosing COVID-19 and Viral Pneumonia from Chest X-Rays
+## :stop_sign: ___Note:___ An updated and better version of this repository can be found [here](https://github.com/priyavrat-misra/xrays-and-gradcam). It follows a better approach with an updated dataset. I'd recommend it over this one. :stop_sign:
 
 ![cover](https://raw.githubusercontent.com/priyavrat-misra/detect-covid19-from-xrays/master/images/test_results.png "sample test set results")
 
